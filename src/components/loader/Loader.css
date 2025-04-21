@@ -1,0 +1,32 @@
+/* src/components/Loader.css */
+
+/* Loader Container to center the loader */
+.loader-container {
+    position: fixed; /* Position it fixed to the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds semi-transparent background */
+    z-index: 9999; /* Ensures it appears on top of other content */
+  }
+  
+  /* Loader Styling (Spinner) */
+  .loader {
+    border: 4px solid #f3f3f3; /* Light background color */
+    border-top: 4px solid #3498db; /* Blue color for the spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Spinning animation */
+  }
+  
+  /* Animation for the spinning effect */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

@@ -1,0 +1,26 @@
+/* Add this CSS for the zoom-in and zoom-out effect */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
+}
+
+.animated-zoom {
+  animation: zoomInOut 2s ease-in-out infinite; /* Smooth zoom in and out */
+}
+
+
+/* Custom styles for Bill Generated Successfully */
+.bill-success-message {
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #343a40; /* Dark text color */
+  margin-bottom: 16px; /* Custom margin */
+}
