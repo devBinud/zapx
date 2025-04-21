@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../login/Login.css";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import logo from "../../assets/image/logo.png"
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -24,12 +25,16 @@ const Login = () => {
       <div className="card" style={{ width: "100%", maxWidth: "420px" }}>
         <div className="card-body">
           {/* Logo */}
-          <div className="app-brand justify-content-center d-flex mb-3">
-            <span className="app-brand-text demo text-body fw-bolder fs-3">StorePlex</span>
+          <div className="app-brand justify-conten-left d-flex mb-3">
+          <a href="#!" class="app-brand-link gap-2">
+                  <span class="app-brand-logo demo">
+                   <img height={56} src={logo} alt="" style={{marginLeft:"-10px"}} />
+                  </span>
+                </a>
           </div>
           {/* /Logo */}
 
-          <h4 className="mb-2">Welcome! 👋</h4>
+          <h4 className="mb-2">Welcome!</h4>
           <p className="mb-4">Please sign in to your account</p>
 
           {error && <p className="text-danger">{error}</p>}
